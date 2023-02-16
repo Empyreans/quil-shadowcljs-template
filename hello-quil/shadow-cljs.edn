@@ -1,0 +1,14 @@
+;; shadow-cljs configuration
+{:source-paths
+ ["src/dev"
+  "src/main"
+  "src/test"]
+
+ :dev-http {3000 "public"}
+
+ :dependencies
+ [[quil "4.0.0"]]
+
+ :builds
+ {:app {:target :browser
+        :modules {:main {:entries [my_sketch]}}}}}
